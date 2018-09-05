@@ -43,7 +43,7 @@ class Serial {
 	}
 
 
-	static log() {
+	static logDevices() {
     	this.portList = new Array();
 		chrome.serial.getDevices(function(ports) {
 			console.log("Serial> Available paths:");
